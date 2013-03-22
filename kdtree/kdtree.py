@@ -1,5 +1,4 @@
 import numpy as np
-#import pylab as plt
 import matplotlib.pyplot as plt
 
 class KDTreeNode:
@@ -57,8 +56,10 @@ class KDTree:
 
         return self.node
 
+    def 
+
 def draw(node, minx, maxx, miny, maxy):
-    """Draw a kd-tree been built, points must have two dims.
+    """Draw a kd-tree been built, points must have two dimensions.
 
     Parameters
     ----------
@@ -76,8 +77,8 @@ def draw(node, minx, maxx, miny, maxy):
     -------
     None
     """
-    if len(points[0]) != 2
-        print "The points in kd-tree must have two dims."
+    if len(points[0]) != 2:
+        print "The points in kd-tree must have two dimensions."
         return
  
     if node is None:
